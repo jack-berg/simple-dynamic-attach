@@ -1,0 +1,6 @@
+rootProject.name = 'simple-dynamic-attach'
+
+include 'agent'
+include 'app'
+include 'attacher'
+

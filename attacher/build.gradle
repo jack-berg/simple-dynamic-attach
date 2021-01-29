@@ -1,0 +1,9 @@
+apply plugin: 'application'
+
+run.dependsOn(project(':agent').jar)
+
+application {
+    mainClass = 'com.example.Attacher'
+    applicationDefaultJvmArgs = ["-Dagent_location=${project(':agent').buildDir}/libs/agent-1.0-SNAPSHOT.jar"]
+}
+
